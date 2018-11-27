@@ -1,4 +1,4 @@
-class Api extends bun.vueapp {
+class Api extends bun.$_appname {
     constructor() {
         super();
         this.a = 1;

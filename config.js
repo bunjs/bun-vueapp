@@ -1,6 +1,6 @@
 module.exports = {
 	dirname: __dirname,
-	appname: 'vueapp',
+	appname: '$_appname',
 	localStaticDomain: '//localhost:8000',
 	publicStaticDomain: '//gh.bdstatic.com',
 	/**

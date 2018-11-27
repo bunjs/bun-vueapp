@@ -1,4 +1,4 @@
-class Controller_Main extends bun.vueapp {
+class Controller_Main extends bun.$_appname {
     constructor() {
         super();
         global.navigator = global.navigator || {};

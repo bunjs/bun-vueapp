@@ -6,12 +6,12 @@
  **************************************************************************/
 
 /**
- * @file Index.js
- * @extend bun.vueapp
- * react应用ssr demo
+ * @file Example.js
+ * @extend bun.$_appname
+ * vue应用 demo
  */
 
-class Example extends bun.vueapp {
+class Example extends bun.$_appname {
     constructor() {
         super();
         this.a = 1;

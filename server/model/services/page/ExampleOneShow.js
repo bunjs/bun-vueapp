@@ -1,4 +1,4 @@
-class Services_Page_ExampleOneShow extends bun.vueapp{
+class Services_Page_ExampleOneShow extends bun.$_appname{
     constructor() {
         super();
     }
