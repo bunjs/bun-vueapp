@@ -12,30 +12,28 @@
 </template>
 
 <script>
-    export default {
-        components: {
-        },
-        data() {
-            return {
-            };
-        }
+export default {
+    components: {},
+    data() {
+        return {};
     }
+};
 </script>
 
 <style>
-    html{
-        height: 100%;
-        width: 100%;
-    }
-    #app {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        overflow: scroll;
-    }
-    .outer {
-        height: 100vh;
-        margin: 0;
-        padding: 0;
-    }
+html {
+    height: 100%;
+    width: 100%;
+}
+#app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+}
+.outer {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
 </style>

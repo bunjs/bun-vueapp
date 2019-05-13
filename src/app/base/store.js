@@ -4,18 +4,11 @@
  */
 import Vue from 'vue';
 import vuex from 'vuex';
-import api from './api';
+// import api from '@common/api';
 Vue.use(vuex);
 
-const STATUS = {
-    'initialize': 0,
-    'matching': 1,
-    'pking': 2,
-    'over': 4
-};
-
 export const ACTIONS = {
-    'HINT': 'HINT'
+    HINT: 'HINT'
 };
 
 let match = {
@@ -28,11 +21,12 @@ let match = {
     },
     mutations: {
         [ACTIONS.HINT](state, hint) {
-            state.hint = {...state.hint, ...hint};
+            state.hint = { ...state.hint, ...hint };
         }
     },
     actions: {
-        [ACTIONS.CHECK_SETTLE]({commit}) {
+        [ACTIONS.CHECK_SETTLE]({ commit }) {
+            commit(ACTIONS.HINT, {});
             // return api.cc().checkSettle().then(rsp => {
             //     commit(ACTIONS.CHECK_SETTLE, rsp);
             // }).catch(err => {
@@ -47,4 +41,3 @@ export default new vuex.Store({
         match
     }
 });
-

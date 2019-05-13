@@ -4,11 +4,8 @@
     </div>
 </template>
 <script>
-
-    export default {
-        components: {
-        },
-        created() {
-        }
-    };
+export default {
+    components: {},
+    created() {}
+};
 </script>
