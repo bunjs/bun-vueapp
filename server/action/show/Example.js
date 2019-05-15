@@ -11,15 +11,14 @@
  * vue应用 demo
  */
 
-class Example extends bun.$_appname {
+class Example extends bun.class.$_appname {
     constructor() {
         super();
         this.a = 1;
-        
     }
     async execute(ctx) {
-        await ctx.render('example',{
-            message: 'Bunjs is ready!!',
+        await ctx.render("example", {
+            message: "Bunjs is ready!!",
             state: JSON.stringify({})
         });
     }
