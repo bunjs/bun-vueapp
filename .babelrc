@@ -4,14 +4,15 @@
             "targets": {
                 "browsers": ["last 2 versions", "safari >= 7"]
             },
-            "modules": false, //禁用babel-preset-env的模块化规范转化
+            "modules": "commonjs", //为了支持ssr统一使用commonjs规范
             "corejs": "3.0.0",
             "debug": false,
             "useBuiltIns": "usage" // 是否开启自动支持 polyfill
             
         }]
     ],
-    "plugins": [ 
+    "plugins": [
+        "@babel/plugin-syntax-dynamic-import",
         ["component", { "libraryName": "mint-ui", "style": true }]
     ]
 }

@@ -1,25 +1,24 @@
 /**
  * @file router.js
- * @author aosyang<yangyanzhao@baidu.com>
+ * @author https://github.com/DOBEEE
  */
 import Vue from 'vue';
-import Main from '../page/home/main.vue';
-import Two from '../page/two/main.vue';
 import VueRouter from 'vue-router';
 Vue.use(VueRouter);
 
 const routes = [
     {
         path: '/',
-        component: Main,
+        component: () =>
+            import(/* webpackChunkName: "home" */ '@/app/page/home'),
         meta: {
-            page: 'Main',
+            page: 'Home',
             title: '我是第一个页面'
         }
     },
     {
         path: '/two',
-        component: Two,
+        component: () => import(/* webpackChunkName: "two" */ '@/app/page/two'),
         meta: {
             page: 'Secret',
             title: '我是第二个页面'

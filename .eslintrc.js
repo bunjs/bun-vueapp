@@ -11,7 +11,11 @@ module.exports = {
     },
     parserOptions: {
         ecmaVersion: 2018,
-        sourceType: "module"
+        parser: "babel-eslint",
+        sourceType: "module",
+        ecmaFeatures: {
+            legacyDecorators: true
+        }
     },
     plugins: ["vue"],
     rules: {
