@@ -5,7 +5,7 @@ module.exports = {
     entry: {
         index: './src/entry/index.js'
     },
-    output: './build/static/$_appname',
+    output: './build/static',
     template: '',
     appname: '$_appname',
     // bun r --dev时使用localStaticDomain

@@ -11,7 +11,7 @@
  * vue应用 demo
  */
 
-class Action_Show_Example extends bun.class.$_appname {
+class Action_Show_Example extends bun.class["$_appname"] {
     constructor() {
         super();
         this.a = 1;
